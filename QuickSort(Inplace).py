@@ -16,7 +16,7 @@ def quickSort(lst, start, end):
         if left < right:
             lst[left], lst[right] = lst[right], lst[left]
     lst[left], lst[end] = lst[end], lst[left] 
+    print(lst)
     quickSort(lst, start, left-1)
     quickSort(lst, left+1, end)
-    return lst
 print(quickSort(lst, start, end))
